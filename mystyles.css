@@ -1,0 +1,35 @@
+body{
+/*Set background image and center all the content that goes inside the body element */
+    height:100%;
+    background:radial-gradient(rgba(144, 238, 144, 0.301),rgba(34, 104, 34, 0.5) ),
+     url("home.jpg") 0 0/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.bg.dimmed{
+/* when we set dimmed class in JS, set all the CSS styles that needs to happen here */
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    position:fixed;
+    background-color:rgba(0,0,0,0.85);
+}
+.lightbox{ 
+/* Light button styles go here */
+    position:absolute;
+    top:50%;
+    z-index: 1;
+    padding:1rem;
+    background-color:white;
+    display:flex;
+    flex-direction: column;
+}
+.lightbox:hover{
+    cursor:pointer;
+}
+.lightbox span{
+    align-self:center;
+    padding:0.5rem;
+}
